@@ -1,0 +1,21 @@
+<form method="post" action="<?php echo                  $_SERVER['PHP_SELF'];?>"> 
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+#######################################################################################
+Wartość $_SERVER['PHP_SELF'] jest pobierana 
+bezpośrednio z adresu URL wprowadzonego w
+ przeglądarce. Dlatego jeśli używasz go 
+bez htmlspecialchars(), pozwalasz hakerom 
+bezpośrednio manipulować wyjściem twojego 
+kodu.
+
+<form action="http://example.com/"><script>malicious_code_here()</script><span class="">
+
+Mój skrypt będzie działał, a ty nie 
+będziesz mądrzejszy. Jeśli byłeś zalogowany,
+ być może ukradłem Twoje pliki cookie lub
+ wyskrobałem poufne informacje z Twojej strony.
+
+
+<form action="http://example.com/&quot;&gt;&lt;script&gt;cookie_stealing_code()&lt;/script&gt;&lt;span class=&quot;">
+
+Po przesłaniu formularza miałbyś dziwny adres URL, ale przynajmniej mój zły skrypt nie działał.

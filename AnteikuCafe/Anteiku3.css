@@ -1,0 +1,85 @@
+.mainby2
+{
+    display: flex; height:100%;
+}
+
+.part1
+{width: 40%; display:flex;
+    justify-content: flex-start;
+    border: 30px solid transparent; border-image: url('s2.png') 28 round;}
+
+.part2
+{width: 60%; background-color:fuchsia;
+overflow-y: auto;
+border: 30px solid transparent; border-image: url('s2.png') 28 round;
+position: relative;}
+
+.imq
+{width: 100%;
+opacity: 0.8;
+margin: 0;
+padding: 0;}
+
+.callhef
+{
+    background-color: darkblue;
+    margin-bottom: 15px;
+    margin-left: 75px;
+    width: 100px;
+}
+
+.form_php
+{
+    min-width: 186px;
+   /* white-space: pre-wrap;*/
+    max-height: 460px;
+    background-color: aquamarine;
+    /*position: absolute;*/
+    margin:  55px 0 0 20px;
+    border: white 3px dotted;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p{font-family: 'BIZ UDMincho', serif;font-size: 20px;
+    text-shadow: 2px 2px #9989f5;text-align: center;}
+
+i{color: darkorchid;
+margin: 0 20px 0 20px;}
+
+input[type="text"] , input[type="search"]
+{
+    border: 2px #a542ff solid;
+    text-align: center;
+}
+
+.desrt_des
+{
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 2%;
+    margin-right: 2%;
+    z-index: 4;
+    width: 90%;
+    min-height: 150px;
+    background: rgba(165, 66, 255,0.5);
+    border: black 2px solid;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.desrt_des img{
+    max-height: 350px;
+    max-width: 300px;
+    border: 5px solid yellow;
+    margin: 5px;
+    padding: 2px;
+}
+
+
+#content{position: relative;
+    z-index: 100;}
+
+#wrapper_b
+{  
+    position: absolute;z-index: 1;
+    top: 0;
+}
